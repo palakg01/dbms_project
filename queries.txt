@@ -1,0 +1,23 @@
+CREATE TABLE `railway_system`.`ticket` ( `ticket_id` INT NOT NULL , `train_no` INT NOT NULL , `booked_user` VARCHAR(25) NOT NULL , `status` VARCHAR(10) NOT NULL , `no_of_passengers` INT NOT NULL , PRIMARY KEY (`ticket_id`)) ENGINE = InnoDB;
+
+CREATE TABLE `railway_system`.`train` ( `train_name` VARCHAR(25) NOT NULL , `train_no` INT NOT NULL , `src` VARCHAR(25) NOT NULL , `destn` VARCHAR(25) NOT NULL , `arrival_time` TIME NOT NULL , `dep_time` TIME NOT NULL , `available_seats` INT NOT NULL , PRIMARY KEY (`train_no`)) ENGINE = InnoDB;
+
+ALTER TABLE `train` ADD `waiting` INT NOT NULL AFTER `available_seats`;
+
+CREATE TABLE `railway_system`.`passenger` ( `passenger_id` INT NOT NULL ,  `name` VARCHAR(25) NOT NULL ,  `email` VARCHAR(25) NOT NULL ,  `age` INT NOT NULL ,  `pnr_no` INT NOT NULL ,  `seat_no` INT NOT NULL ,  `reservation_status` VARCHAR(10) NOT NULL ,    PRIMARY KEY  (`passenger_id`)) ENGINE = InnoDB;
+
+INSERT INTO `train`(`train_name`, `train_no`, `src`, `destn`, `arrival_time`, `dep_time`, `available_seats`) VALUES ('[value-1]','[value-2]','[value-3]','[value-4]','[value-5]','[value-6]','[value-7]')
+
+UPDATE `train` SET `src` = 'delhi' WHERE `train`.`train_no` = 11002
+
+ALTER TABLE `train` ADD `price` INT NOT NULL AFTER `waiting`;
+
+UPDATE `train` SET `price` = '5000' WHERE `train`.`train_no` = 11001
+UPDATE `train` SET `price` = '5000' WHERE `train_no` = 11001
+UPDATE `train` SET `available_seats`='5'
+
+
+ALTER TABLE `ticket` ADD `order_id` INT(255) NOT NULL AFTER `booked_user`, ADD `payed_on` TIMESTAMP NOT NULL AFTER `order_id`;
+ALTER TABLE `ticket` CHANGE `ticket_id` `ticket_id` INT(11) NOT NULL AUTO_INCREMENT;
+
+UPDATE `train` SET `available_seats` = '4', `waiting` = '1' WHERE `train`.`train_no` = 11001
