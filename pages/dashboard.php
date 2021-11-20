@@ -48,28 +48,33 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     
-   <!-- Bootstrap CSS --> 
-   <link 
+    <!-- Bootstrap CSS --> 
+    <link 
       rel="stylesheet" 
       href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
       integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk"
       crossorigin="anonymous"
-    >  
+    >
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@1,300&family=Noto+Serif:ital@1&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="stylesDash.css">
+      
 
     <title>Dbms Project</title>
   </head>
 
-  <body>
-    <div class="d-flex align-items-center flex-column bg-light" style='min-height:100vh'>
-      <h1 class="p-4"> 
+  <body class="dashBody">
+    <div class="img d-flex align-items-center flex-column bg-light" style = "min-height:100vh;">
+      <h1 class="dash-head p-4" style="color: white; font-family: 'Noto Serif', serif;"> 
         WELCOME
         <?php echo $_SESSION["email"]; ?>
       </h1>
 
-      <div class="border mt-5 shadow" style='min-width:50vw' >
-        <form action="" method="post" class='px-5 py-5'>
+      <div class=" border mt-5 shadow" style="min-width:50vw; background-color: white;border-radius: 20px;opacity: 0.87;">
+        <form action="" method="post" class='dashboard px-5 py-5'>
 
-          <h4 class='d-flex justify-content-center pb-4'>Book A Ticket</h4>
+          <h4 class='d-flex justify-content-center pb-4' style="font-family: 'Noto Serif', serif;">Book A Ticket</h4>
 
           <div class="form-group d-flex justify-content-between"> 
             <div class="d-flex flex-column" style='width:48%'>
@@ -140,12 +145,12 @@
 
     
     <div style='position:absolute;top:2rem;right:2rem; border-bottom:1px solid grey'>
-      <a href="logout.php"><h5 class='text-info'>Logout</h5></a>
+      <a href="logout.php"><h5 class='text-dark' style="color: black; background-color: #ffc107;" >Logout</h5></a>
     </div>
     <div style='position:absolute;top:2rem;right:7rem;border-bottom:1px solid grey'>
       <!-- Button trigger modal -->
       <button type="button" class="btn py-0" data-toggle="modal" data-target="#exampleModalLong">
-      <h5 class='text-info'>Your Bookings</h5>
+      <h5 class='text-dark' style="color: black; background-color: #ffc107;">Your Bookings</h5>
       </button>
     </div>
 

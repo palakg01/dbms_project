@@ -54,16 +54,22 @@
     integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk"
     crossorigin="anonymous"
   >  
+  <link rel="stylesheet" href="stylesDash.css">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@1,300&family=Noto+Serif:ital@1&display=swap" rel="stylesheet">
+  
 
     <title>Dbms Project</title>
   </head>
 
-  <body>
+  <body class="login-body">
 
   <!-- login form -->
-  <div class="border mt-5 shadow" style='max-width:80vh;margin:auto'>
+  <div class="border mt-5 shadow login-form" style='max-width:80vh;margin:auto'>
     <form action="" name="login_form" onsubmit="return validation()" method="post" class='flex justify-content-center align-items-center px-5 py-5'>
-      <h4 class='d-flex justify-content-center pb-4'>LOGIN</h4>
+      <h4 class='d-flex justify-content-center pb-4 login-h4'>LOGIN</h4>
 
         <div class="form-group"> 
             <label for="email">Email</label> 
