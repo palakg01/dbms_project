@@ -1,0 +1,32 @@
+.login-body {
+  background-image: url("bgimg.jpg");
+  background-color: #cccccc;
+  background-repeat: no-repeat;
+}
+
+.img {
+  background-image: url("bgimg.jpg");
+  opacity: 0.9;
+}
+/*.dashBody {
+  background-image: url("bgimg.jpg");
+  background-repeat: no-repeat;
+  opacity: 0.1;
+}*/
+
+.namesake {
+  margin-top: 30px;
+  margin-left: 150px;
+}
+/* ----------login page ------------------------------------------------ */
+
+.login-form {
+  background-color: white;
+  border: 3px white solid;
+  border-radius: 20px;
+  opacity: 0.87;
+  box-shadow: 5px 5px 10px 2px rgba(0, 0, 0, 0.8);
+}
+.login-h4 {
+  font-family: "Noto Serif", serif;
+}

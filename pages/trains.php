@@ -37,12 +37,13 @@
       integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk"
       crossorigin="anonymous"
     >  
+    <link rel="stylesheet" href="stylesDash.css">
 
     <title>Dbms Project</title>
   </head>
 
-  <body>
-    <div class="d-flex flex-column">
+  <body class="img trains-body">
+    <div class="trains d-flex flex-column">
       <a href="dashboard.php" style="position:absolute;top:15px; left:15px;color:white;font-size:1.3rem">Back</a>
       <h4 class="bg-info p-3 text-center"><?php echo $num_of_trains ?> Results found for <?php echo $src ?> -> <?php echo $destn ?></h4>
 
@@ -62,7 +63,7 @@
                 echo '
                 <div class="container mx-5 px-5 border my-3 p-4 rounded" style="width:50%;background-color:#D3DCE3">
                  
-                  <h5 class="px-2 pt-1 text-capitalize position-absolute text-info">'.$row['train_name'].'</h5>
+                  <h5 class="namesake px-2 pt-1 text-capitalize position-absolute text-info">'.$row['train_name'].'</h5>
                   <div class="d-flex mb-3 justify-content-center p-0 text-success text-capitalize">
                     <h4>'.$row['src'].'</h4>
                     <h4> &nbsp;&nbsp;&nbsp;&nbsp;to&nbsp;&nbsp;&nbsp;&nbsp; </h4>

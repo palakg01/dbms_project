@@ -55,12 +55,13 @@
       integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk"
       crossorigin="anonymous"
     >  
+    <link rel="stylesheet" href="stylesDash.css">
 
     <title>Dbms Project</title>
   </head>
 
-  <body>
-    <h4 class="p-3"><a href='trains.php'>Back</a></h4>
+  <body class="img">
+    <h4 class="p-3"><a href='trains.php' style="background-color: #ffc107; color: black;">Back</a></h4>
     <div class="container mt-5 text-center rounded p-4" style="margin:auto;background-color:#dfe7fd;position:relative">
       <h3 class="pb-5">Booking Details</h3>
       <p style="position:absolute;top:10px;right:10px" class="p-4">Train No: <br>11001</p>

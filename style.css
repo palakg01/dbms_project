@@ -1,0 +1,16 @@
+body{
+    background-image: url("bgimg.jpg");
+    background-color: #cccccc;
+    background-repeat: no-repeat;   
+}
+
+.index-heading{
+    font-family: 'Noto Serif', serif;
+}
+.index-form{
+    background-color:white; 
+    border: 3px white solid; 
+    border-radius: 20px; 
+    opacity:0.87;
+    box-shadow:5px 5px 10px 2px rgba(0,0,0,.8);
+}

@@ -93,18 +93,24 @@
     integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk"
     crossorigin="anonymous"
     >  
-
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@1,300&family=Noto+Serif:ital@1&display=swap" rel="stylesheet">
+    <link rel="stylesheet"  href="style.css">
     <title>Dbms Project</title>
+
+    
   </head>
 
   <body>
 
   <!-- signup form -->
 
-    <div class="border mt-5 shadow" style='max-width:80vh;margin:auto'>
+    <div class="border mt-4 mb-3 shadow index-form" style='max-width:80vh;margin:auto;'>
       <form action="" method="post" class='flex justify-content-center align-items-center px-5 py-5'>
 
-        <h4 class='d-flex justify-content-center pb-4'>Register</h4>
+        <h4 class='d-flex justify-content-center pb-4 index-heading' style="font-family: 'Noto Serif', serif;">Register</h4>
         <div class="form-group"> 
             <label for="username">Name <span style='color:red'>*</span></label> 
             <input type="text" class="form-control" id="name" name="name" aria-describedby="emailHelp">    
@@ -130,9 +136,9 @@
             <input type="number" class="form-control" id="phone" name="phone">
         </div>    
 
-        <div class="d-flex justify-content-between" style='width:100%'>
+        <div class="d-flex justify-content-between" style='width:100%;'>
           <button type="submit" class="btn btn-primary">
-              SignUp
+              Sign up
           </button> 
           <a href='./pages/login.php'>Already have an account? </a>
         </div>
